@@ -1,0 +1,195 @@
+{
+    "barNav": {
+        "navItemsIndex": [
+            {
+                "name": "Inicio",
+                "link": "./index.html"
+            },
+            {
+                "name": "Presupuesto",
+                "link": "./views/presupuesto.html"
+            },
+            {
+                "name": "Galeria",
+                "link": "./views/galeria.html"
+            },
+            {
+                "name": "Contacto",
+                "link": "./views/contacto.html"
+            }
+        ],
+        "navItemsPresupuesto": [
+            {
+                "name": "Inicio",
+                "link": "../index.html"
+            },
+            {
+                "name": "Presupuesto",
+                "link": "./presupuesto.html"
+            },
+            {
+                "name": "Galeria",
+                "link": "./galeria.html"
+            },
+            {
+                "name": "Contacto",
+                "link": "./contacto.html"
+            }
+        ],
+        "navItemsGaleria": [
+            {
+                "name": "Inicio",
+                "link": "../index.html"
+            },
+            {
+                "name": "Presupuesto",
+                "link": "./presupuesto.html"
+            },
+            {
+                "name": "Galeria",
+                "link": "./galeria.html"
+            },
+            {
+                "name": "Contacto",
+                "link": "./contacto.html"
+            }
+        ],
+        "navItemsContacto": [
+            {
+                "name": "Inicio",
+                "link": "../index.html"
+            },
+            {
+                "name": "Presupuesto",
+                "link": "./presupuesto.html"
+            },
+            {
+                "name": "Galeria",
+                "link": "./galeria.html"
+            },
+            {
+                "name": "Contacto",
+                "link": "./contacto.html"
+            }
+        ]
+    },
+    "seccion1": [
+        {
+            "titulo": "VIATIS",
+            "descripcion": "Comienza tu aventura"
+        }
+    ],
+    "seccion2": [
+        {
+            "titulo": "¿PORQUE ELEGIRNOS A NOSOTROS?",
+            "descripcion": "En nuestra agencia de viajes, nos apasiona ayudarte a descubrir el mundo y crear experiencias inolvidables. Con años de experiencia en la industria del turismo, ofrecemos un servicio personalizado y atención al detalle para asegurarnos de que cada viaje sea único y especial. Ya sea que estés buscando una escapada romántica, una aventura emocionante o unas vacaciones relajantes, estamos aquí para hacer realidad tus sueños de viaje."
+        }
+    ],
+    "imgSeccion2": [
+        {
+            "foto": "./assets/images/precio.png",
+            "titulo2": "Precios competitivos",
+            "subtitulo": "Ofrecemos precios competitivos para que puedas disfrutar de tus vacaciones sin preocuparte por el costo."
+        },
+        {
+            "foto": "./assets/images/llamadas.png",
+            "titulo2": "Atención personalizada",
+            "subtitulo": "Nuestro equipo de expertos está disponible para ayudarte en cada paso de tu viaje."
+        },
+        {
+            "foto": "./assets/images/viaje.png",
+            "titulo2": "Experiencia y conocimiento",
+            "subtitulo": "Contamos con años de experiencia en la industria."
+        },
+        {
+            "foto": "./assets/images/avion.svg",
+            "titulo2": "Viajes organizados",
+            "subtitulo": "Nuestros Circuitos incluyen vuelos, hoteles, transporte, visitas guiadas y seguro de viaje. "
+        },
+        {
+            "foto": "./assets/images/percentage.png",
+            "titulo2": "Facilidades de pago",
+            "subtitulo": "Encuentra tu Circuito al precio que buscas, con las mejores ofertas y facilidades de pago. "
+        }
+    ],
+    "tituloDestinos": [
+        {
+            "tit": "ELIGE TU TIPO DE AVENTURA"
+        }
+    ],
+    "imgDestinos": [
+        {
+            "destino": "SIERRA",
+            "imagen": "./assets/images/montaña.jpg"
+        },
+        {
+            "destino": "PLAYA",
+            "imagen": "./assets/images/playas.webp"
+        },
+        {
+            "destino": "CENTROS HISTORICOS",
+            "imagen": "./assets/images/sevilla.jpg"
+        },
+        {
+            "destino": "NIEVE",
+            "imagen": "./assets/images/nieve.png"
+        }
+    ],
+    "viajesGrupo": {
+        "viajes1": [
+            {
+                "imgGrupo": "./assets/images/grupo1.jpg",
+                "tituloGrupo": "Descubre viajes en grupo"
+            }
+        ],
+        "viajes2": [
+            {
+                "imgGrupo2": "./assets/images/grupociudad.jpg",
+                "tituloGrupo2": "Historia y cultura"
+            },
+            {
+                "imgGrupo2": "./assets/images/grupoplaya.jpg",
+                "tituloGrupo2": "Nuevas playas"
+            },
+            {
+                "imgGrupo2": "./assets/images/grupomontana.jpg",
+                "tituloGrupo2": "Rutas de aventura"
+            },
+            {
+                "imgGrupo2": "./assets/images/gruponieve.avif",
+                "tituloGrupo2": "Paisajes de invierno"
+            }
+        ]
+    },
+    "footer": {
+        "redes": [
+            {
+                "img": "./assets/images/facebook.png",
+                "link": "https://www.facebook.com/?locale=es_ES"
+            },
+            {
+                "img": "./assets/images/instagram.png",
+                "link": "https://www.instagram.com/"
+            },
+            {
+                "img": "./assets/images/linkedin.png",
+                "link": "https://www.linkedin.com/"
+            },
+            {
+                "img": "./assets/images/twitter.png",
+                "link": "https://www.twitter.com/"
+            }
+        ],
+        "direccion": [
+            {
+                "nombre": "Paseo de Ntra. Sra. de la O, 41010 Sevilla, España",
+                "link": "https://www.google.com/maps/place/Paseo+de+Ntra.+Sra.+de+la+O,+41010+Sevilla/@37.3861318,-6.0021015,16.5z/data=!4m6!3m5!1s0xd126c1367196597:0xce2cdfebea6cd9af!8m2!3d37.3858181!4d-6.0029212!16s%2Fg%2F11gmfg4q8f?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D"
+            }
+        ],
+        "avisoLegal": [
+            {
+                "aviso": "© 2026 Viatis. Todos los derechos reservados."
+            }
+        ]
+    }
+}

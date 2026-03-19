@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Pagina web de viajes">
+    <meta name="keywords" content="viajes, turismo, vacaciones">
+    <meta name="author" content="Jaime">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<!--Dividimos el body en diferentes etiquetas; header, main y footer -->
+
+<body class="pagina-index">
+    <!--Header: Contiene el logo y la barra de navegación, los añadiremos a traves de js desde la carpeta json-->
+    <header>
+        <nav>
+            <h1>
+                <img src="./assets/images/logo.svg" alt="Viatis">
+            </h1>
+            <div class="bar-nav" id="navItemsIndex">
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Sección portada: Contiene la imagen de fondo y el título, los añadiremos a traves de js desde la carpeta json-->
+        <section id="portada">
+            <div class="container1">
+            </div>
+        </section>
+
+        <!--Sección destinos: Contiene el título y las imágenes de los destinos, los añadiremos a traves de js desde la carpeta json-->
+        <section id="destinos">
+            <div class="titulo-destinos"></div>
+            <div class="container-destinos"></div>
+        </section>
+
+        <!--Sección contacto: Contiene el título y las imágenes de los destinos, los añadiremos a traves de js desde la carpeta json-->
+        <section id="contacto">
+            <div class="container2"></div>
+            <div class="container3"></div>
+        </section>
+
+        <!--Sección viajes en grupo: Contiene el título y las imágenes de los destinos, los añadiremos a traves de js desde la carpeta json-->
+        <section id="viajesGrupo">
+            <div class="viajes1">
+
+            </div>
+            <div class="viajes2">
+
+            </div>
+        </section>
+    </main>
+    <!--Footer: Contiene el aviso legal, las redes sociales y la dirección, los añadiremos a traves de js desde la carpeta json-->
+    <footer class="footer" id="footer">
+        <div class="avisoLegal"></div>
+        <div class="redes"></div>
+        <div class="direccion"></div>
+    </footer>
+    <!--Scripts-->
+    <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

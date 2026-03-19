@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN
+        8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<!--Dividimos el body en diferentes etiquetas; header, main y footer -->
+
+<body class="pagina-galeria">
+    <!--Header: Contiene el logo y la barra de navegación, los añadiremos a traves de js desde la carpeta json-->
+    <header>
+        <nav>
+            <h1>
+                <img src="../assets/images/logo.svg" alt="">
+            </h1>
+            <div class="bar-nav" id="navItemsGaleria">
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Carousel: Contiene las imágenes de la galería-->
+        <div class="carousel">
+            <div class="galeria-carousel">
+                <div class="img-carousel">
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriaciudad.webp" alt="foto ciudad1">
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriaciudad2.jpg" alt="foto ciudad2">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriamontana.jpg" alt=" foto montaña1">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriamontana2.jpg" alt="foto montaña2">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriamontananieve.jpeg" alt="foto nieve1">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galerianieve.jpg" alt="foto nieve2">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriaplaya.jpg" alt="foto playa1">
+
+                    </div>
+                    <div class="miniatura">
+                        <img src="../assets/images/galeriaplaya2.jpg" alt="foto playa2">
+
+                    </div>
+                </div>
+            </div>
+            <!--Botones del carousel-->
+            <div class="btns-carousel">
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+            </div>
+        </div>
+    </main>
+    <!--Footer: Contiene el aviso legal, las redes sociales y la dirección, los añadiremos a traves de js desde la carpeta json-->
+    <footer class="footer" id="footer">
+        <div class="avisoLegal"></div>
+        <div class="redes"></div>
+        <div class="direccion"></div>
+    </footer>
+    <!--Scripts-->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+
+</html>

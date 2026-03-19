@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Enlace a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Enlace a leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<!--Dividimos el body en diferentes etiquetas; header, main y footer -->
+
+<body class="pagina-contacto">
+    <!--Header: Contiene el logo y la barra de navegación, los añadiremos a traves de js desde la carpeta json-->
+    <header>
+        <nav>
+            <h1>
+                <img src="../assets/images/logo.svg" alt="">
+            </h1>
+            <div class="bar-nav" id="navItemsContacto">
+            </div>
+        </nav>
+    </header>
+    <!--Main: Contiene la información de contacto y el mapa-->
+    <main>
+        <section class="contacto-section">
+            <div class="contacto-info">
+                <h2>Información de Contacto</h2>
+                <div class="info-item">
+                    <span>📍</span>
+                    <p><strong>Dirección: Calle Jardín de las Delicias, 6, 1ºC, 41300, San José de la Rinconada,
+                            Sevilla, España</strong> </p>
+                </div>
+                <div class="info-item">
+                    <span>📞</span>
+                    <p><strong>Teléfono:</strong> +34 600 558 739</p>
+                </div>
+                <div class="info-item">
+                    <span>✉️</span>
+                    <p><strong>Email:</strong> tuviaje@info.com</p>
+                </div>
+            </div>
+            <!--Mapa-->
+            <div id="mapa-contacto"></div>
+        </section>
+    </main>
+    <!--Footer: Contiene el aviso legal, las redes sociales y la dirección, los añadiremos a traves de js desde la carpeta json-->
+    <footer class="footer" id="footer">
+        <div class="avisoLegal"></div>
+        <div class="redes"></div>
+        <div class="direccion"></div>
+    </footer>
+    <!--Scripts-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>

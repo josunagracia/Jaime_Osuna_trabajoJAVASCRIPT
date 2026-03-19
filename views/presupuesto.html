@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!--Dividimos el body en diferentes etiquetas; header, main y footer -->
+
+<body class="pagina-presupuesto">
+    <!--Header: Contiene el logo y la barra de navegación, los añadiremos a traves de js desde la carpeta json-->
+    <header>
+        <nav>
+            <h1>
+                <img src="../assets/images/logo.svg" alt="">
+            </h1>
+            <div class="bar-nav" id="navItemsPresupuesto">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!--Formulario: Contiene el formulario de presupuesto-->
+            <form id="formulario">
+                <!--ContainerSuperior: Contiene los datos de contacto y el precio del destino-->
+                <div class="containerSuperior">
+                    <div class="container-contacto">
+                        <h4>Datos de contacto</h4>
+                        <div class="contacto">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                                <span class="error" id="errorNombre"></span>
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"
+                                    required>
+                                <span class="error" id="errorApellido"></span>
+                            </div>
+                            <div>
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono"
+                                    required>
+                                <span class="error" id="errorTelefono"></span>
+
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                                <span class="error" id="errorEmail"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="precio-destino">
+                        <h4>Producto/Destino</h4>
+                        <div class="opcion-destino">
+                            <input type="radio" id="paris" name="destino" data-price="300" value="París" required>
+                            <label for="paris">París -300 €-</label>
+                        </div>
+                        <div class="opcion-destino">
+                            <input type="radio" id="maldivas" name="destino" data-price="500" value="Maldivas">
+                            <label for="maldivas">Maldivas -500€-</label>
+                        </div>
+                        <div class="opcion-destino">
+                            <input type="radio" id="lauterbrunnen" name="destino" data-price="800"
+                                value="Lauterbrunnen">
+                            <label for="lauterbrunnen">Lauterbrunnen -800€-</label>
+                        </div>
+                        <div class="opcion-destino">
+                            <input type="radio" id="alpes" name="destino" data-price="700" value="Alpes">
+                            <label for="alpes">Alpes -700€-</label>
+                        </div>
+                    </div>
+                </div>
+                <!--ContainerInferior: Contiene los extras y el total del presupuesto-->
+                <div class="containerInferior">
+                    <div class="precio-extra">
+                        <h4>Extras</h4>
+                        <div class="item-extras">
+                            <input type="checkbox" id="excursion" name="extra" value="excursion" data-price="60">
+                            <label for="excursion">Excursion guiada (60€)</label>
+                        </div>
+                        <div class="item-extras">
+                            <input type="checkbox" id="incluido" name="extra" value="incluido" data-price="100">
+                            <label for="incluido">Todo incluido (100€)</label>
+                        </div>
+                        <div class="item-extras">
+                            <input type="checkbox" id="bienvenida" name="extra" value="bienvenida" data-price="30">
+                            <label for="bienvenida">Pack de bienvenida (30€)</label>
+                        </div>
+                        <div class="item-extras">
+                            <input type="checkbox" id="seguro" name="extra" value="seguro" data-price="50">
+                            <label for="seguro">Seguro de viaje (50€)</label>
+                        </div>
+                        <div class="total-extras">
+                            <h5 id="precio-extras">Total Extras: </h5>
+                        </div>
+                    </div>
+
+                    <div class="total-presupuesto">
+                        <div class="plazos" id="plazos">
+                            <input type="number" id="plazo" name="plazo" min="1" max="12" value="1">
+                            <label for="plazo">Plazo (meses) - 10% a partir de 6 meses (máximo 12 meses)</label>
+                        </div>
+                        <div class="precio-final">
+                            <h4 class="precio" id="precio-final">Presupuesto total:</h4>
+                        </div>
+                        <div class="condiciones">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad">He leído y acepto las condiciones de privacidad.</label>
+                            <small id="errorCheckbox">*Obligatorio</small>
+                        </div>
+                        <div class="botones-formulario">
+                            <button type="submit" class="btnEnviar" id="btnEnviar">Enviar</button>
+
+                            <button type="reset" class="btnBorrar" id="btnBorrar">Borrar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--Footer: Contiene el aviso legal, las redes sociales y la dirección, los añadiremos a traves de js desde la carpeta json-->
+    <footer class="footer" id="footer">
+        <div class="avisoLegal"></div>
+        <div class="redes"></div>
+        <div class="direccion"></div>
+    </footer>
+    <!--Scripts-->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/presupuesto.js"></script>
+</body>
+
+</html>
